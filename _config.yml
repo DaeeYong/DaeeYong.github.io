@@ -1,9 +1,5 @@
-# Welcome to Jekyll!
-# bundle exec jekyll serve
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
+# setting file
+# command : bundle exec jekyll serve
 
 # Theme Settings
 #
@@ -16,11 +12,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "ivory"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+#name                     : "Your Name"
+description              : ivory의 블로그입니다."
 url                      : "https://DaeeYong.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -104,10 +100,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "ivory"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              :
+  location         : "earth"
   email            :
   links:
     - label: "Email"
