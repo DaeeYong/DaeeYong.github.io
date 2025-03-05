@@ -1,0 +1,15 @@
+<ul style="list-style-type: none; padding: 0;">
+  {% for paper in site.data.publications %}
+  <li style="display: flex; align-items: center; margin-bottom: 20px;">
+    <img src="{{ paper.image }}" alt="{{ paper.title }}" style="width: 150px; margin-right: 20px; border-radius: 8px;">
+    <div>
+      <strong>{{ paper.title }}</strong><br>
+      {{ paper.authors }}<br>
+      <em>{{ paper.conference }}</em><br>
+      <a href="{{ paper.links.project }}">Project</a> |
+      <a href="{{ paper.links.paper }}">Paper</a> |
+      <a href="{{ paper.links.code }}">Code</a>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
