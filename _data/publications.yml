@@ -1,17 +1,8 @@
-- title: "Mocap Everyone Everywhere: Lightweight Motion Capture With Smartwatches and a Head-Mounted Camera"
+- title: "DaeYong Kim, YeonSu Lee, YuKyeom Kim, JungHwan Shin, Clint Hansen, Walter Maetzler, and Ri Yu"
   authors: "Jiye Lee and Hanbyul Joo"
-  conference: "CVPR 2024"
+  conference: "International Congress of Parkinson's Disease and Movement Disorders (2024)"
   links:
-    paper: "#"
+    paper: "https://www.mdsabstracts.org/abstract/the-novel-gait-cycle-detection-network-gcdn-for-video-based-gait-analysis-based-on-single-2d-rgb-video/"
     project: "#"
     code: "#"
-  image: "assets/images/mocap_everyone.png"
-
-- title: "Locomotion-Action-Manipulation: Synthesizing Human-Scene Interactions in Complex 3D Environments"
-  authors: "Jiye Lee and Hanbyul Joo"
-  conference: "ICCV 2023"
-  links:
-    paper: "#"
-    project: "#"
-    code: "#"
-  image: "assets/images/locomotion_action.png"
+  image: "assets/images/publications/1.png"
