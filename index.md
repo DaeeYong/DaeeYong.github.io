@@ -2,6 +2,7 @@
 layout: home
 page_title: "DY Kim"
 page_description: "Porject Portfolio"
+image: "/assets/images/preview.png"
 ---
 
 <div class="profile-container">
