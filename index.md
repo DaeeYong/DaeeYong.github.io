@@ -26,7 +26,7 @@ image: "/assets/images/preview.png"
 <section class="updates">
   <h2>Updates</h2>
   <ul>
-    <li><strong>Mar 2023</strong>: Our paper accepted to MDS2024 🎉</li>
+    <li><strong>Sep 2024</strong>: Our paper accepted to International Congress of Parkinson's Disease and Movement Disorders🎉</li>
     <li><strong>Jan 2023</strong>: Joined Computer Graphics Labs as a undergraduate research intern</li>
     <li><strong>Jul 2022</strong>: Joined Visual Computing Labs as a undergraduate research intern</li>
   </ul>
