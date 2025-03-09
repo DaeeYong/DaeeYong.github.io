@@ -1,0 +1,14 @@
+- title: "Image Processing"
+  description: "영상 필터 적용 및 Edge Detection 구현"
+  github: "https://github.com/yourusername/image-processing"
+  link: "/projects/image-processing/"
+
+- title: "Computer Vision"
+  description: "OpenCV를 활용한 객체 탐지 및 추적"
+  github: "https://github.com/yourusername/computer-vision"
+  link: "/projects/computer-vision/"
+
+- title: "Computer Graphics"
+  description: "OpenGL을 활용한 3D 모델링 및 렌더링"
+  github: "https://github.com/yourusername/computer-graphics"
+  link: "/projects/computer-graphics/"

@@ -1,16 +1,25 @@
 <div class="projects-container">
-    <ul>
-      <li>
-        <strong>Image processing</strong><br>
-        작성중...
-      </li>
-      <li>
-        <strong>Computer vision</strong><br>
-        작성중...
-      </li>
-      <li>
-        <strong>Computer Graphics</strong><br>
-        작성중...
-      </li>
-    </ul>
-  </div>
+  {% for project in site.data.projects %}
+    <div class="project">
+      <div class="project-header">
+        <h3><a href="{{ project.link }}">{{ project.title }}</a></h3>
+      </div>
+      <p class="project-desc">📌 {{ project.description }}</p>
+      <div class="project-footer">
+        <a class="github-button" href="{{ project.github }}" target="_blank">
+          <i class="fa-brands fa-github"></i> GitHub Repository
+        </a>
+      </div>
+    </div>
+  {% endfor %}
+
+    <!-- 프로젝트 개수가 홀수이면 더미 박스 추가 -->
+    {% if site.data.projects.size | modulo: 2 != 0 %}
+    <div class="project dummy-project">
+      <div class="project-header">
+        <h3>Coming Soon 🚀</h3>
+      </div>
+      <p class="project-desc">다음 프로젝트 준비 중...</p>
+    </div>
+  {% endif %}
+</div>
