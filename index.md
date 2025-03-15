@@ -51,8 +51,16 @@ image: "/assets/images/preview.png"
   <h2>Projects</h2>
   {% include projects.html %}
 </section>
-
 <section id="seminars">
   <h2>Seminars</h2>
   {% include seminars.html %}
+</section>
+
+<section id="seminars">
+  <h2>Seminars</h2>
+  <ul>
+    {% for year in site.data.seminars %}
+      <li><a href="seminars/{{ year[0] }}">📅 {{ year[0] }} Seminars</a></li>
+    {% endfor %}
+  </ul>
 </section>

@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<h2>📅 {{ page.year }} Seminars</h2>
+
+<ul>
+  {% assign seminar_list = site.data.seminars[page.year] %}
+  {% if seminar_list and seminar_list.size > 0 %}
+    {% for seminar in seminar_list %}
+      <li>
+        <h3>{{ seminar.title }}</h3>
+        <p>📅 {{ seminar.date }} [{{ seminar.type }}]</p>
+        {% if seminar.conference %}
+          <p>📖 <strong>Published in:</strong> {{ seminar.conference }}</p>
+        {% endif %}
+        <p>
+          {% if seminar.paper %}
+            📄 <a href="{{ seminar.paper }}" target="_blank">Original Paper</a> |
+          {% endif %}
+          📂 <a href="{{ site.baseurl }}/{{ seminar.pdf }}" target="_blank">pdf</a>
+        </p>
+      </li>
+    {% endfor %}
+  {% else %}
+    <p>No seminars found for {{ page.year }}.</p>
+  {% endif %}
+</ul>
+
+<p><a href="/">🔙 Back to Seminar List</a></p>
