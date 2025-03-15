@@ -8,6 +8,11 @@
   github: "https://github.com/DaeeYong/CV-Projects"
   link: "https://github.com/DaeeYong/CV-Projects"
 
+- title: "Cloth Simulation"
+  description: "Developed multiband blending, coin counting, and image stitching algorithms."
+  github: "https://github.com/DaeeYong/Cloth-Simulation"
+  link: "https://github.com/DaeeYong/Cloth-Simulation"
+
 - title: "Game project"
   description: "Designed and developed an animal-themed version of the Quoridor board game."
   github: "https://github.com/DaeeYong/2023_MSE_gameProject"
