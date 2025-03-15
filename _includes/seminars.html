@@ -1,123 +1,27 @@
 <div class="seminars-container">
-
-  <div class="2025">
-    <h2>2025</h2>
-    <ul>
-      <li>
-        <h3>Two Views Are Better than One: Monocular 3D Pose Estimation with Multiview Consistency</h3>
-        <p>📅 Seminar Date: 2025.03.11 [Lecture]</p>
-        <!-- 논문 원문 링크 -->
-        <p>
-          📄 <a href="https://arxiv.org/abs/2311.12421" target="_blank">Original Paper</a> | 
-          📂 <a href="assets/seminars/25.03.11.pdf" target="_blank">pdf</a>
-        </p>
-        
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <h3>Orientation and Rotation 05</h3>
-        <p>📅 Seminar Date: 2025.01.21 [Lecture]</p>
-        <!-- 논문 원문 링크 -->
-        <p>
-          📂 <a href="assets/seminars/25.01.21.pdf" target="_blank">pdf</a>
-        </p>
-      </li>
-    </ul>
-  </div>
-  <div class="2024">
-    <h2>2024</h2>
-  <ul>
-    <li>
-      <h3>Orientation and Rotation 04</h3>
-      <p>📅 Seminar Date: 2024.12.10 [Lecture]</p>
-      <!-- 논문 원문 링크 -->
-      <p>
-        📂 <a href="assets/seminars/24.12.10.pdf" target="_blank">pdf</a>
-      </p>
-    </li>
-    <li>
-      <h3>Orientation and Rotation 03</h3>
-      <p>📅 Seminar Date: 2024.11.19 [Lecture]</p>
-      <!-- 논문 원문 링크 -->
-      <p>
-        📂 <a href="assets/seminars/24.11.19.pdf" target="_blank">pdf</a>
-      </p>
-    </li>
-    <li>
-      <h3>Orientation and Rotation 02</h3>
-      <p>📅 Seminar Date: 2024.10.29 [Lecture]</p>
-      <!-- 논문 원문 링크 -->
-      <p>
-        📂 <a href="assets/seminars/24.10.29.pdf" target="_blank">pdf</a>
-      </p>
-    </li>
-    <li>
-      <h3>Orientation and Rotation 01</h3>
-      <p>📅 Seminar Date: 2024.10.15 [Lecture]</p>
-      <!-- 논문 원문 링크 -->
-      <p>
-        📂 <a href="assets/seminars/24.10.15.pdf" target="_blank">pdf</a>
-      </p>
-    </li>
-
-    <li>
-      <h3>MoConVQ: Unified Physics-Based Motion Control via Scalable Discrete Representations</h3>
-      <p>📅 Seminar Date: 2024.08.26 [Paper Reivew]</p>
-      <p>📖 <strong>Published in:</strong> ACM Trans. Graph. (Jounal)</p>
-      <!-- 논문 원문 링크 -->
-      <p>
-        📄 <a href="https://dl.acm.org/doi/10.1145/3658137" target="_blank">Original Paper</a> | 
-        📂 <a href="assets/seminars/24.08.26.pdf" target="_blank">pdf</a>
-      </p>
-    </li>
-    <li>
-      <h3>SuperPADL: Scaling Language-Directed Physics-Based Control with Progressive Supervised Distillation</h3>
-      <p>📅 Seminar Date: 2024.08.05 [Paper Reivew]</p>
-      <p>📖 <strong>Published in:</strong> ACM SIGGRAPH 2024 (Conference)</p>
-      <!-- 논문 원문 링크 -->
-      <p>
-        📄 <a href="https://dl.acm.org/doi/10.1145/3641519.3657492" target="_blank">Original Paper</a> | 
-        📂 <a href="assets/seminars/24.08.05.pdf" target="_blank">pdf</a>
-      </p>
-    </li>
-
-    <li>
-      <h3>Programmable Motion Generation for Open-Set Motion Control Tasks</h3>
-      <p>📅 Seminar Date: 2024.07.22 [Paper Reivew]</p>
-      <p>📖 <strong>Published in:</strong> CVPR 2024 (Conference)</p>
-      <!-- 논문 원문 링크 -->
-      <p>
-        📄 <a href="https://hanchaoliu.github.io/Prog-MoGen/" target="_blank">Original Paper</a> | 
-        📂 <a href="assets/seminars/24.07.22.pdf" target="_blank">pdf</a>
-      </p>
-    </li>
-
-    <li>
-      <h3>3D Human Keypoints Estimation from Point clouds in the Wild Without Human Labels</h3>
-      <p>📅 Seminar Date: 2024.05.29 [Paper Reivew]</p>
-      <p>📖 <strong>Published in:</strong> CVPR 2023 (Conference)</p>
-      <!-- 논문 원문 링크 -->
-      <p>
-        📄 <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Weng_3D_Human_Keypoints_Estimation_From_Point_Clouds_in_the_Wild_CVPR_2023_paper.pdf" target="_blank">
-          Original Paper</a> | 
-        📂 <a href="assets/seminars/24.05.29.pdf" target="_blank">pdf</a>
-      </p>
-    </li>
-
-    <li>
-      <h3>3D human pose estimation in video with temporal convolutions and semi-supervised training</h3>
-      <p>📅 Seminar Date: 2024.04.17 [Paper Reivew]</p>
-      <p>📖 <strong>Published in:</strong> CVPR 2019 (Conference)</p>
-      <!-- 논문 원문 링크 -->
-      <p>
-        📄 <a href="https://dariopavllo.github.io/VideoPose3D/" target="_blank">Original Paper</a> | 
-        📂 <a href="assets/seminars/24.04.17.pdf" target="_blank">pdf</a>
-      </p>
-      <p>
-  </p>
-    </li>    
-  </ul>
+  {% for year in site.data.seminars %}
+    {% assign year_name = year[0] %}
+    {% assign seminars_list = year[1] %}
+    
+    <div class="{{ year_name }}">
+      <h2>{{ year_name }}</h2>
+      <ul>
+        {% for seminar in seminars_list %}
+          <li>
+            <h3>{{ seminar.title }}</h3>
+            <p>📅 Seminar Date: {{ seminar.date }} [{{ seminar.type }}]</p>
+            {% if seminar.conference %}
+              <p>📖 <strong>Published in:</strong> {{ seminar.conference }}</p>
+            {% endif %}
+            <p>
+              {% if seminar.paper %}
+                📄 <a href="{{ seminar.paper }}" target="_blank">Original Paper</a> |
+              {% endif %}
+              📂 <a href="{{ seminar.pdf }}" target="_blank">pdf</a>
+            </p>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
 </div>
-  </div>
-  
