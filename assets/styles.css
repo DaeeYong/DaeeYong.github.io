@@ -12,7 +12,12 @@ html, body {
     margin: 0 auto;
     padding: 0 20px;
   }
+
+ul {
+  font-size: 17px;
+}
   
+
   /* ========== 헤더(네비게이션) ========== */
   .site-header {
     position: sticky;

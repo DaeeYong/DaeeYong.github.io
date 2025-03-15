@@ -18,7 +18,7 @@ layout: default
           {% if seminar.paper %}
             📄 <a href="{{ seminar.paper }}" target="_blank">Original Paper</a> |
           {% endif %}
-          📂 <a href="{{ site.baseurl }}/{{ seminar.pdf }}" target="_blank">pdf</a>
+          📂 <a href="{{ seminar.pdf | absolute_url }}" target="_blank">pdf</a>
         </p>
       </li>
     {% endfor %}
