@@ -12,8 +12,8 @@ image: "/assets/images/preview.png"
     <p>
       Hi, I'm <strong>DaeYong Kim</strong>. I'm a MS student at 
       <strong>Ajou University</strong>, advised by <strong>Prof. Ri Yu</strong>.
-      I focus on <strong>Computer Graphics</strong> such as 
-      <strong>motion capture, human-scene interaction, etc.</strong>
+      I am interested in computer vision, image processing, and computer graphics.
+      Currently, I am focusing on human motion research within computer graphics, particularly on video-based human pose estimation and motion generation using generative models.
     </p>
     <div class="contact infomation">contact: {{site.email}}</div>
     <div class="buttons">
@@ -26,7 +26,7 @@ image: "/assets/images/preview.png"
 <section class="updates">
   <h2>Updates</h2>
   <ul>
-    <li><strong>Sep 2024</strong>: Our paper accepted to International Congress of Parkinson's Disease and Movement Disorders🎉</li>
+    <li><strong>Sep 2024</strong>: Our paper accepted to International Congress of Parkinson's Disease and Movement Disorders</li>
     <li><strong>Jan 2023</strong>: Joined Computer Graphics Labs as a undergraduate research intern</li>
     <li><strong>Jul 2022</strong>: Joined Visual Computing Labs as a undergraduate research intern</li>
   </ul>

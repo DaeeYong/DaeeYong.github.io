@@ -20,8 +20,8 @@
 
 - title: "Dragon Python Package"
   description: "A utility library for preprocessing joint positions in videos."
-  github: ""
-  link: ""
+  github: "https://github.com/DaeeYong/dragon_library"
+  link: "https://github.com/DaeeYong/dragon_library"
 
 - title: "Re-identification"
   description: "Reclassified OpenPose 2D joint indices using YOLOv8n for improved accuracy."
